@@ -62,7 +62,7 @@ function build()
 		spawn(function()
 			while data("get", "auto_collect") do
 				task.wait(0.05)
-				for i,v in pairs(workspace.Drops:FindFirstChild(game.Players.LocalPlayer.Name)) do
+				for i,v in pairs(workspace.Drops:FindFirstChild(game.Players.LocalPlayer.Name):GetChildren()) do
 					pcall(function()
 						v.CanCollide = false
 						v.CFrame = game.Players.LocalPlayer.Character.PrimaryPart.CFrame
