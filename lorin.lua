@@ -49,7 +49,7 @@ function build()
 		end,
 	})
 	
-	local l = Tabs.cool:AddToggle({
+	local l = Tabs.cool:AddToggle("pl", {
 		Title = "Auto collect orbs";
 		Default = false
 	})
