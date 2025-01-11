@@ -1,7 +1,4 @@
-if game.PlaceId ~= 18901165922 then
-	warn("not pets go.")
-	return
-end
+
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 
 
