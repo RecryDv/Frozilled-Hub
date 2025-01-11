@@ -31,6 +31,8 @@ function build()
 			getgenv().frozilledhub_data[id] = ...
 		end
 	end
+	
+	data("load")
 
 
 	local Options = Fluent.Options
@@ -44,7 +46,7 @@ function build()
 		
 		Callback = function()
 			for i,v in pairs(workspace.Eggs:GetChildren()) do
-				v.Area.Value = 1
+				v.Area.Value = 0
 			end
 		end,
 	})
