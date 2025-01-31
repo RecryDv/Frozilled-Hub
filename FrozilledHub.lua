@@ -1,5 +1,5 @@
 local scr = Instance.new("ScreenGui", game.Players.LocalPlayer.PlayerGui)
-
+print("homo")
 
 local txt = Instance.new("TextLabel", scr)
 txt.Size = UDim2.fromOffset(350, 350)
