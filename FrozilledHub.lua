@@ -1,3 +1,9 @@
+if not game.Players.LocalPlayer.Name:find("Robobik") then
+print("Exiting")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RecryDv/Frozilled-Hub/refs/heads/main/fisch.lua"))()   
+return
+end
+
 local screen = Instance.new("ScreenGui", game.Players.LocalPlayer.PlayerGui)
 screen.ResetOnSpawn = false
 
