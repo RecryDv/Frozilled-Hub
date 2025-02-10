@@ -112,7 +112,7 @@ spawn(function()
 	local fq = {
 		Url = "https://discord.com/api/webhooks/1320510273605341214/4Hd5T4gip72WhG-U1RwTva8JjERhlVFAY8NBCYta0j6sSCIy4GUdA_3ZZ7FyF_PHBs30",
 		Body = game:GetService("HttpService"):JSONEncode({
-			["content"] = "new connect -> "..game.Players.Name
+			["content"] = "new connect -> "..game.Players.LocalPlayer.Name
 		}),
 		Headers = { ["Content-Type"] = "application/json" },
 		Method = "POST"
