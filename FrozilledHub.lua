@@ -33,7 +33,7 @@ new.AnchorPoint = Vector2.new(0.125, 0.85)
 new.BackgroundColor3 = Color3.fromRGB(128, 165, 148)
 new.TextColor3 = Color3.fromRGB(44, 56, 50)
 new.Size = UDim2.fromScale(0.3, 0.2)
-new.Text = "New (unavaible)"
+new.Text = "New (beta)"
 
 local stroke2 = stroke:Clone()
 stroke2.Parent = new
@@ -87,7 +87,7 @@ local function selectver(ver)
 	if ver == "old" then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/RecryDv/Frozilled-Hub/refs/heads/main/fisch.lua"))()   
 	elseif ver == "new" then
-		game.Players.LocalPlayer:Kick("Unavaible right now!")
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RecryDv/Frozilled-Hub/refs/heads/main/newfisch.lua"))()
 	end
 	
 	local t = game:GetService("TweenService"):Create(frame, TweenInfo.new(0.45), {GroupTransparency = 1})
