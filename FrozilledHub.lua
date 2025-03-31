@@ -9,7 +9,7 @@ local function build()
 		Title = "Frozilled Hub | Fisch",
 		Icon = "fish",
 		Author = "by sh0vel",
-		ToggleKey = Enum.KeyCode.Insert,
+		ToggleKey = Enum.KeyCode.Delete,
 		Folder = "FrozilledHub",
 		Size = UDim2.fromOffset(680, 460),
 		Transparent = false,
