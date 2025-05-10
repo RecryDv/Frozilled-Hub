@@ -3,7 +3,7 @@ local function build()
 
 	local GuiService = game:GetService("GuiService")
 
-	local WindUI = loadstring(game:HttpGet("https://tree-hub.vercel.app/api/UI/WindUI"))()
+	local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
 
 	local Window = WindUI:CreateWindow({
 		Title = "Frozilled Hub | Fisch",
@@ -1375,7 +1375,7 @@ local function build()
 
 			local enabled = Core.ProcessData("get", "optimization")
 			game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, enabled)
-			game.Players.LocalPlayer.PlayerGui.hud.safezone.backpack.Visible = not enabled
+			game.Players.LocalPlayer.PlayerGui.backpack.Enabled = not enabled
 		end
 	end)
 
